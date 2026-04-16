@@ -13,7 +13,7 @@ import net.minecraft.util.Rarity;
 
 public enum ItemNovelty {
 
-	GREYMERK, NULL, ZISTEAU, AVIDYA, ASHLEA, KURT, 
+	GREYMERK, ZISTEAU, AVIDYA, ASHLEA, KURT, 
 	CLEO, WINDFORCE, RLEAHY, VECHS, GENERIKB, FOURLES,
 	BURNING;
 		
@@ -35,16 +35,6 @@ public enum ItemNovelty {
 			item.addEnchantment(Enchant.getEnchant(reg, Enchant.SHARPNESS), 3);
 			item.addEnchantment(Enchant.getEnchant(reg, Enchant.KNOCKBACK), 1);
 			item.addEnchantment(Enchant.getEnchant(reg, Enchant.UNBREAKING), 2);
-			return item;
-		case NULL:
-			item = new ItemStack(Items.NETHERITE_SWORD);
-			Loot.setItemName(item, "Null Pointer");
-			Loot.setItemLore(item, "Exceptional", TextFormat.DARKGREEN);
-			Loot.setRarity(item, Rarity.EPIC);
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.SHARPNESS), 5);
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.KNOCKBACK), 2);
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.UNBREAKING), 3);
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.MENDING), 1);
 			return item;
 		case ZISTEAU:
 			item = new ItemStack(Items.OAK_SIGN);

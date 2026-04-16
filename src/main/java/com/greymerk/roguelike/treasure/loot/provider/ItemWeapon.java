@@ -52,7 +52,7 @@ public class ItemWeapon extends ItemBase{
 	
 	public static ItemStack getSword(DynamicRegistryManager reg, FeatureSet features, Random rand, Difficulty diff, boolean enchant){
 		
-		if(enchant && rand.nextInt(1000) == 0) return ItemNovelty.getItem(reg, ItemNovelty.NULL);
+		// if(enchant && rand.nextInt(1000) == 0) return ItemNovelty.getItem(reg, ItemNovelty.NULL);
 		
 		if(enchant && rand.nextInt(30) == 0){
 			return ItemSpecialty.getRandomItem(reg, Equipment.SWORD, rand, diff);
@@ -76,7 +76,6 @@ public class ItemWeapon extends ItemBase{
 	
 	private static ItemStack getSwordByQuality(Quality quality){
 		switch (quality) {
-		case NETHERITE: return new ItemStack(Items.NETHERITE_SWORD);
 		case DIAMOND: return new ItemStack(Items.DIAMOND_SWORD);
 		case GOLD: return new ItemStack(Items.GOLDEN_SWORD);
 		case IRON: return new ItemStack(Items.IRON_SWORD);

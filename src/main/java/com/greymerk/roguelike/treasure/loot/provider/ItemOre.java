@@ -25,7 +25,6 @@ public class ItemOre extends ItemBase{
 			
 			switch(d){
 			case HARDEST:
-				randomizer.add(new WeightedRandomLoot(Items.NETHERITE_SCRAP, 1, 1, 1));
 				randomizer.add(new WeightedRandomLoot(Items.DIAMOND, 1, 1, 5));
 				randomizer.add(new WeightedRandomLoot(Items.RAW_GOLD, 1, 16, 25));
 				randomizer.add(new WeightedRandomLoot(Items.RAW_IRON, 1, 16, 25));
@@ -34,7 +33,6 @@ public class ItemOre extends ItemBase{
 				randomizer.add(new WeightedRandomLoot(Items.COAL, 8, 32, 10));
 				break;
 			case HARD:
-				randomizer.add(new WeightedRandomLoot(Items.NETHERITE_SCRAP, 1, 1, 1));
 				randomizer.add(new WeightedRandomLoot(Items.DIAMOND, 1, 1, 5));
 				randomizer.add(new WeightedRandomLoot(Items.RAW_GOLD, 2, 12, 20));
 				randomizer.add(new WeightedRandomLoot(Items.RAW_IRON, 1, 7, 40));

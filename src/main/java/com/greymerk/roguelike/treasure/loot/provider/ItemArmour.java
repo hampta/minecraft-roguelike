@@ -61,7 +61,6 @@ public class ItemArmour extends ItemBase {
 		
 		case HEAD:
 			switch (quality) {
-			case NETHERITE: return new ItemStack(Items.NETHERITE_HELMET);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_HELMET);
 			case GOLD: return new ItemStack(Items.GOLDEN_HELMET);
 			case IRON: return new ItemStack(Items.IRON_HELMET);
@@ -76,7 +75,6 @@ public class ItemArmour extends ItemBase {
 		case FEET:
 			switch (quality) {
 
-			case NETHERITE: return new ItemStack(Items.NETHERITE_BOOTS);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_BOOTS);
 			case GOLD: return new ItemStack(Items.GOLDEN_BOOTS);
 			case IRON: return new ItemStack(Items.IRON_BOOTS);
@@ -91,7 +89,6 @@ public class ItemArmour extends ItemBase {
 		case CHEST:
 			switch (quality) {
 
-			case NETHERITE: return new ItemStack(Items.NETHERITE_CHESTPLATE);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_CHESTPLATE);
 			case GOLD: return new ItemStack(Items.GOLDEN_CHESTPLATE);
 			case IRON: return new ItemStack(Items.IRON_CHESTPLATE);
@@ -105,7 +102,6 @@ public class ItemArmour extends ItemBase {
 		case LEGS:
 			switch (quality) {
 
-			case NETHERITE: return new ItemStack(Items.NETHERITE_LEGGINGS);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_LEGGINGS);
 			case GOLD: return new ItemStack(Items.GOLDEN_LEGGINGS);
 			case IRON: return new ItemStack(Items.IRON_LEGGINGS);

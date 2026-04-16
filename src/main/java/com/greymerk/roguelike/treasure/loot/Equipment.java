@@ -38,7 +38,6 @@ public enum Equipment {
 			case IRON: qualityName = "iron"; break;
 			case GOLD: qualityName = "golden"; break;
 			case DIAMOND: qualityName = "diamond"; break;
-			case NETHERITE: qualityName = "netherite"; break;
 			default: return "minecraft:stick";
 			}
 		} else {
@@ -49,7 +48,6 @@ public enum Equipment {
 			case IRON: qualityName = "iron"; break;
 			case GOLD: qualityName = "golden"; break;
 			case DIAMOND: qualityName = "diamond"; break;
-			case NETHERITE: qualityName = "netherite"; break;
 			default: return "minecraft:stick";
 			}
 		}
@@ -67,7 +65,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_SWORD);
 			case GOLD: return new ItemStack(Items.GOLDEN_SWORD);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_SWORD);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_SWORD);
 			default:
 			}
 		case BOW:
@@ -80,7 +77,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_HELMET);
 			case GOLD: return new ItemStack(Items.GOLDEN_HELMET);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_HELMET);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_HELMET);
 			default:
 			}
 		case CHEST:
@@ -91,7 +87,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_CHESTPLATE);
 			case GOLD: return new ItemStack(Items.GOLDEN_CHESTPLATE);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_CHESTPLATE);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_CHESTPLATE);
 			default:
 			}
 		case LEGS:
@@ -102,7 +97,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_LEGGINGS);
 			case GOLD: return new ItemStack(Items.GOLDEN_LEGGINGS);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_LEGGINGS);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_LEGGINGS);
 			default:
 			}
 		case FEET:
@@ -113,7 +107,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_BOOTS);
 			case GOLD: return new ItemStack(Items.GOLDEN_BOOTS);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_BOOTS);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_BOOTS);
 			default:
 			}
 		case PICK:
@@ -124,7 +117,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_PICKAXE);
 			case GOLD: return new ItemStack(Items.GOLDEN_PICKAXE);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_PICKAXE);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_PICKAXE);
 			default:
 			}
 		case AXE:
@@ -135,7 +127,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_AXE);
 			case GOLD: return new ItemStack(Items.GOLDEN_AXE);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_AXE);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_AXE);
 			default:
 			}
 		case SHOVEL:
@@ -146,7 +137,6 @@ public enum Equipment {
 			case IRON: return new ItemStack(Items.IRON_SHOVEL);
 			case GOLD: return new ItemStack(Items.GOLDEN_SHOVEL);
 			case DIAMOND: return new ItemStack(Items.DIAMOND_SHOVEL);
-			case NETHERITE: return new ItemStack(Items.NETHERITE_SHOVEL);
 			default:
 			}
 		default: return new ItemStack(Items.STICK);

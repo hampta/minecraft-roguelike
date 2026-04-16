@@ -256,15 +256,6 @@ public class ItemSpecialty extends ItemBase {
 			Loot.setItemName(item, "Eldritch Bow");
 			Loot.setItemLore(item, "Warm to the touch", TextFormat.DARKGREEN);
 			return item;
-		case NETHERITE:
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.POWER), 3 + rand.nextInt(3));
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.FLAME), 1);
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.INFINITY), 1);
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.UNBREAKING), getUnbreakingLevel(quality, rand));
-			item.addEnchantment(Enchant.getEnchant(reg, Enchant.MENDING), 1);
-			Loot.setItemName(item, "Eldritch Bow");
-			Loot.setItemLore(item, "Warm to the touch", TextFormat.DARKGREEN);
-			return item;
 		default:
 			return item;
 		}
@@ -294,10 +285,6 @@ public class ItemSpecialty extends ItemBase {
 		case DIAMOND:
 			item = new ItemStack(Items.DIAMOND_HELMET);
 			canonical = "Helm";
-			break;
-		case NETHERITE:
-			item = new ItemStack(Items.NETHERITE_HELMET);
-			canonical = "Visor";
 			break;
 		default:
 			item = new ItemStack(Items.LEATHER_HELMET);
@@ -355,10 +342,6 @@ public class ItemSpecialty extends ItemBase {
 		case DIAMOND:
 			item = new ItemStack(Items.DIAMOND_BOOTS);
 			canonical = "Boots";
-			break;
-		case NETHERITE:
-			item = new ItemStack(Items.NETHERITE_BOOTS);
-			canonical = "Stompers";
 			break;
 		default:
 			item = new ItemStack(Items.LEATHER_BOOTS);
@@ -419,10 +402,6 @@ public class ItemSpecialty extends ItemBase {
 			item = new ItemStack(Items.DIAMOND_LEGGINGS);
 			canonical = "Leggings";
 			break;
-		case NETHERITE:
-			item = new ItemStack(Items.NETHERITE_BOOTS);
-			canonical = "Leg-guards";
-			break;
 		default:
 			item = new ItemStack(Items.LEATHER_LEGGINGS);
 		}
@@ -478,10 +457,6 @@ public class ItemSpecialty extends ItemBase {
 		case DIAMOND:
 			item = new ItemStack(Items.DIAMOND_CHESTPLATE);
 			canonical = "Plate";
-			break;
-		case NETHERITE:
-			item = new ItemStack(Items.NETHERITE_CHESTPLATE);
-			canonical = "Soul cage";
 			break;
 		default:
 			item = new ItemStack(Items.LEATHER_CHESTPLATE);
@@ -540,7 +515,6 @@ public class ItemSpecialty extends ItemBase {
 			value += rand.nextInt(3);
 			break;
 		case DIAMOND:
-		case NETHERITE:
 			value += 2 + rand.nextInt(2);
 			break;
 		}
@@ -557,7 +531,6 @@ public class ItemSpecialty extends ItemBase {
 		case IRON: return "Gothic";
 		case GOLD: return "Jewelled";
 		case DIAMOND: return "Crystal";
-		case NETHERITE: return "Ornate";
 		default: return "Strange";
 		}
 	}

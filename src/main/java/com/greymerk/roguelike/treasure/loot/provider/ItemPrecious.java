@@ -36,7 +36,6 @@ public class ItemPrecious extends ItemBase{
 			
 			if(d.gt(Difficulty.MEDIUM)) {
 				randomizer.add(new WeightedRandomLoot(Items.SHULKER_SHELL, 2));
-				randomizer.add(new WeightedRandomLoot(Items.NETHERITE_SCRAP, 1));
 			}
 		});
 	}
